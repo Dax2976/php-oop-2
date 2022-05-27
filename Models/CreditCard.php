@@ -35,7 +35,7 @@
       if(is_numeric($numbers)==16){
          $this->numbers = $numbers;
       }else{
-         echo ('error credit card unviable');
+        throw new Exception("Error Processing Request");
       }
    }
 

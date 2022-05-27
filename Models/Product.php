@@ -1,9 +1,10 @@
 <?php
 
+require __DIR__ . '/Trait/TraitProduct.php';
+
+
 class Products{
-    public $brand;
-    public $price;
-    public $name;
+    
 
     public function __construct($brand,$price,$name)
     {
