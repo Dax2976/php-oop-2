@@ -1,6 +1,7 @@
 <?php
 include __DIR__ . '/Models/User.php';
 include __DIR__ . '/Models/CreditCard.php';
+include __DIR__ . '/Trait/TraitProduct.php';
 include __DIR__ . '/Models/Product.php';
 
 

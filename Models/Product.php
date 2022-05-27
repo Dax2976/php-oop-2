@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . '/Trait/TraitProduct.php';
+
 
 
 class Products{
