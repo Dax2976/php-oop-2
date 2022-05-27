@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . '/Models/CreditCard.php';
+include __DIR__ . 'Models/CreditCard.php';
 
 
 class User{
@@ -17,12 +17,13 @@ class User{
             $this-> age = $age;
             $this-> creditcard [] = $creditcard;
             $this-> email = $email;
+            
         }
 }
 
 class Discount extends User{
-    private $password;
-    protected $sconto;
+    protected $password = true;
+    protected $sconto = true;
 
     function __construct($name,$lastname,$age,$creditcard,$password,$email){
         parent::__construct($name,$lastname,$age,$creditcard,$email);
@@ -30,10 +31,20 @@ class Discount extends User{
     }
 
     public function getSconto(){
-        if($this->password){
-            $this-> sconto = 20;
+        if($this->password === true){
+             return $this-> sconto = '20%';
         } else{
-            echo 'Subscribe to receive a discount code 📮';
+             'Subscribe to receive a discount code 📮';
         }
+    }
+
+    public function Setpassword($password)
+    {
+        $this->password = $password;
+    }
+
+
+    public function getPassword(){
+        return $this-> $password;
     }
 }

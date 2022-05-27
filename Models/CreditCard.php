@@ -1,7 +1,7 @@
 <?php
  class CreditCard{
     private $numbers;
-    private $scadenza;
+    private $scadenza = TRUE;
     private $cvv;
 
    public function __construct($numbers,$scadenza,$cvv)
