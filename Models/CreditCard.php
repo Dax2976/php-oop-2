@@ -35,7 +35,8 @@
       if(is_numeric($numbers)==16){
          $this->numbers = $numbers;
       }else{
-        throw new Exception("Error Processing Request");
+        //throw new Exception("Error Processing Request");
+        echo('errore');
       }
    }
 
