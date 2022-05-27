@@ -4,9 +4,7 @@
 
 
 class Products{
-    use brand;
-    use price;
-    use name;
+    use Wherehouse;
 
     public function __construct($brand,$price,$name)
     {
